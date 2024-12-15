@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Delicious+Handrawn&family=Montserrat:wght@300;400;500&family=Noto+Sans+Mahajani&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 15px black;
+}
+
+.div-pf {
+    display: flex;
+}
+
+.pf-h1 a {
+    text-decoration: none;
+}
+
+.h1-s {
+    color: aliceblue;
+}
+
+.span-h1 {
+    color: #00fbfb;
+}
+
+.div-pf ul {
+    display: flex;
+}
+
+.div-pf {
+    position: fixed;
+    height: 70px; 
+    width: 100%; 
+    background: url(images/backgrounds.jpg);
+    background-size: cover;
+    margin-top: 40px;
+    box-shadow: 0 10px 20px black;
+}
+
+.pf-h1 {
+    width: 50%;
+    margin-left: 167px;
+    margin-top: 30px;
+}
+
+.pf-ul {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 36px;
+}
+
+.ul-nav li {
+    list-style: none;
+    margin-left: 70px;
+}
+
+.ul-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 590;
+    transition: all 0.5s;
+}
+
+.a-about:hover {
+    color: #00fbfb;
+    transform: translateY(1.5px);
+}
+.a-service:hover {
+    color: #00fbfb;
+    transform: translateY(1.5px);
+}
+
+.a-project:hover {
+    color: #00fbfb;
+    transform: translate(1.5);
+}
+
+.a-contact:hover {
+    color: #00fbfb;
+    transform: translate(1.5);
+}
+
+.a-home:hover {
+    color: #00fbfb;
+    transform: translate(1.5);
+}
+
+.pf-ul .ul-nav a.active {
+    color: #00fbfb;
+}
+
+.section-home {
+    background: url(images/backgrounds.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 113vh;
+    padding: 0 10%;
+    margin-top: -60px;
+}
+
+.content {
+    width: 50%;
+    transition: all 0.7s ease-in 0s;
+}
+
+.content h1 {
+    font-family: Cutive Mono ;
+    font-size: 29px;
+    font-weight: 600;
+    text-align: left;
+    transition: all 0.7s ease-in 0s;
+}
+
+.content h3 {
+    font-size: 25px;
+    font-weight: 550;
+    color: aqua;
+}
+
+.btn {
+    margin-top: 13px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 10px;
+    border: 1px solid aquamarine;
+}
+
+.btn a {
+    color: aliceblue;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 12px;
+}
+
+.btn a:hover,.btn:hover  {
+    color: #24252A;
+    background-color: aquamarine;
+    transition: ease-in 0.2s;
+}
+
+.me img {
+    height: 400px;
+    margin-left: 70px;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.me {
+    width: 50%;
+    margin-left: 244px;
+    margin-top: 80px;
+}
+
+.me img {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 30%; /* Make the image circular */
+    transition: all 0.7s;
+}
+
+.me img:hover {
+    transform: scale(1.2)
+}
+
+.section-about {
+    background: url(images/backgrounds.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 72px;
+}
+
+.container-about {
+    color: aliceblue;
+}
+
+
+.about-img img  {
+    height: 340px;
+    margin-left: 15px;
+    animation: showup 2s;
+    border-radius: 20px;
+}
+
+@keyframes showup {
+    from {height: 0;}
+    to {height: 400px;}
+}
+
+.about-img .aboutme1 {
+    transition: all 0.5s;
+}
+
+.about-img .aboutme1:hover {
+    height: 340px;
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px black;
+}
+
+.about-img .aboutme2 {
+    transition: all 0.5s;
+}
+
+.about-img .aboutme2:hover {
+    height: 340px;
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px black;
+}
+
+.about-img .aboutme3 {
+    transition: all 0.5s;
+}
+
+.about-img .aboutme3:hover {
+    height: 340px;
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px black; 
+}
+
+.section-project {
+    background: url(images/backgrounds.jpg) no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    text-align: center;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.div-project {
+    margin-top: 40px;
+}
+
+.myproject {
+    margin-top: 85px;
+}
+
+.myproject img {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+
+.button-project button {
+    height: 45px;
+    width: 110px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.button-project button:hover {
+    transform: scale(1.2);
+}
+
+.button-project {
+    margin-top: 62px;
+}
+
+.section-services{
+    height: 100vh;
+    background: url(images/backgrounds.jpg) no-repeat;
+    background-size: cover;   
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 113vh;
+    padding: 0 10%;
+    margin-top: -60px;
+}
+#contact {
+    height: 100vh;
+    background: url(images/backgrounds.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.container-contact {
+    position: relative;
+    border: 2px solid white;
+    top: 13%;
+    height: 80%;
+    width: 60%;
+    left: 25%;
+}
+
+div .contactme {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 38px;
+    padding-top: 10px;
+}
+
+.email {
+    display: flex;
+    padding: 15px;
+    width: 95%;
+    padding: 0;
+}
+
+.email .img-icon {
+    margin-left: 79px;
+    margin-top: 9.5px;
+}
+
+.img-icon img {
+    height: 30px;
+}
+
+.email a {
+    margin-left: 16px;
+    margin-top: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.email a:hover {
+    color: aqua;
+    transform: translate(1);
+}
+
+.viber {
+    display: flex;
+    padding: 15px;
+    width: 95%;
+    margin-top: 28px;
+    padding: 0;
+}
+
+.viber a {
+    margin-left: 12px;
+    margin-top: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.viber a:hover {
+    color: aqua;
+    transform: translate(1);
+}
+
+.viber .viber-icon {
+    margin-left: 79px; 
+    margin-top: 3 px;
+}
+
+.viber img {
+    height: 38px;
+}
+
+.media {
+    width: 95%;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 89px;
+}
+
+.media ul {
+    display: flex;
+}
+
+.media ul li {
+    margin-left: 25px;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+ul .fb:hover {
+    transform: scale(1.5);
+}
+
+ul .wa:hover {
+    transform: scale(1.5);
+}
+
+.resume {
+    width: 95%;
+    height: 70px;
+}
+
+.button-resume {
+    width: 150px;
+    margin-left: 30%;
+    margin-top: 45px;
+    padding: 15px;
+    background-color: green;
+    border: none;
+    border-radius: 7px;
+    color: aliceblue;
+    transition: all 0.5s;
+    font-weight: bolder;
+}
+
+.button-resume:hover {
+    transform: scale(1.2);
+}
+
+.inputbox {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    background: #312d2d;
+    display: block;
+    height: 50px;
+    color: aliceblue;
+    border: #312d2d;
+    place-items: inherit;
+    width: 320px;
+}
+
+textarea {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    background: #312d2d;
+    display: block;
+    color: aliceblue;
+    border: #312d2d;
+    place-items: inherit;
+    resize: none;
+    width: 320px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: left;
+}
+
+.textbox {
+    width: 50%;
+    float: right;
+    height: 50%;
+}
+
+.button-submit {
+    width: 150px;
+    margin-top: 35px;
+    padding: 15px;
+    background-color: green;
+    border: none;
+    border-radius: 7px;
+    color: aliceblue;
+    transition: all 0.5s;
+    font-weight: bolder;
+}
+
+.button-submit:hover {
+    transform: scale(1.2);
+}
+
+.div-ft {
+    height: 50px;
+    background-color: #24252A;
+    box-shadow: 0 -5px 15px black
+}
+
+.h-ft {
+    height: 40px;
+    display: inline-block;
+    margin-left: 40%;
+}
+
+.h-ft h1 {
+    font-size: large;
+    color: aliceblue;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 280px)
+{
+    html,
+    body {
+        width: 100vw
+    }
+
+
+    .pf-h1 {
+        margin-left: 28px;
+        width: auto;
+    }
+
+    .pf-h1 a {
+        width: 145%;
+    }
+
+    .div-pf ul {
+        width: 0;
+    }
+
+    .pf-ul {
+        margin: 0;
+        width: 10%;
+        float: right;
+    }
+
+    .div-pf {
+        display: inline-block;
+    }
+
+    .section-home {
+        padding: 0;
+    }
+
+    .content {
+        display: block;
+        width: 57%;
+        min-width: 99%;
+        margin: 10px;
+        height: 0;
+        margin-top: 100px;
+    }
+
+    .content h1 {
+        font-size: larger;
+    }
+
+    .content h3 {
+        font-size: large;
+    }
+
+    .content p {
+        font-size: smaller;
+    }
+
+    .content .btn {
+        height: 32px;
+        padding-top: 5px;
+    }
+
+    .content .btn a {
+        padding: 0;
+    }
+
+    .section-home .me {
+        position: absolute;
+        margin-bottom: 258px;
+        margin-left: 0;
+    }
+
+    .section-home .me img {
+        height: 203px;
+    }
+
+    .section-about {
+        padding: 0 5px 5px;
+        height: 760px;
+    }
+
+    .container-about p {
+        font-size: small;
+    }
+
+    .about-img {
+        margin-top: 24px;
+    }
+
+    .about-img img {
+        height: 200px;
+        margin: 0 0 10px 0;
+        border-radius: 10px;
+    }
+
+    .about-img img:hover {
+        transform: scale(0.1);
+    }
+
+    .myproject img {
+        height: 207px;
+        width: 240px;
+    }
+
+    .section-contact {
+        height: 500px;
+    }
+
+    .container-contact {
+        position: inherit;
+        width: 100%;
+        top: 15%;
+        left: 0;
+        border: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .contactme {
+        padding: 0;
+    }
+
+    .textbox {
+        position: absolute;
+    }
+
+    .submit {
+        width: 277px;
+        text-align: center;
+    }
+
+    .h-ft {
+        margin: 0;
+    }
+
+    .h-ft h1 {
+        font-size: 12px;
+    }
+} 
