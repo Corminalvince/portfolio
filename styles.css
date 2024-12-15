@@ -491,7 +491,7 @@ textarea {
     margin-top: 15px;
 }
 
-@media only screen and (max-width: 280px)
+@media (max-width: 930px)
 {
     html,
     body {
