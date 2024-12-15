@@ -521,6 +521,29 @@ textarea {
     .div-pf {
         display: inline-block;
     }
+    .a-about:hover {
+        color: #00fbfb;
+        transform: translateY(1.5px);
+    }
+    .a-service:hover {
+        color: #00fbfb;
+        transform: translateY(1.5px);
+    }
+    
+    .a-project:hover {
+        color: #00fbfb;
+        transform: translate(1.5);
+    }
+    
+    .a-contact:hover {
+        color: #00fbfb;
+        transform: translate(1.5);
+    }
+    
+    .a-home:hover {
+        color: #00fbfb;
+        transform: translate(1.5);
+    }
 
     .section-home {
         padding: 0;
