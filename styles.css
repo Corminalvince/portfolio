@@ -513,12 +513,12 @@ textarea {
 
 
     .pf-h1 {
-
+        margin-left: 30px;
         width: auto;
     }
 
     .pf-h1 a {
-        width: 145%;
+        width: 100%;
     }
 
     .div-pf ul {
