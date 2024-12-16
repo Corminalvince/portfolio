@@ -662,28 +662,184 @@ textarea {
         border: none;
     }
 
-    .social {
-        display: none;
-    }
-
-    .contactme {
+    .email {
+        display: flex;
+        padding: 15px;
+        width: 95%;
         padding: 0;
     }
-
+    
+    .email .img-icon {
+        margin-left: 79px;
+        margin-top: 9.5px;
+    }
+    
+    .img-icon img {
+        height: 30px;
+    }
+    
+    .email a {
+        margin-left: 16px;
+        margin-top: 14px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s;
+    }
+    
+    .email a:hover {
+        color: aqua;
+        transform: translate(1);
+    }
+    
+    .viber {
+        display: flex;
+        padding: 15px;
+        width: 95%;
+        margin-top: 28px;
+        padding: 0;
+    }
+    
+    .viber a {
+        margin-left: 12px;
+        margin-top: 12px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s;
+    }
+    
+    .viber a:hover {
+        color: aqua;
+        transform: translate(1);
+    }
+    
+    .viber .viber-icon {
+        margin-left: 79px; 
+        margin-top: 3 px;
+    }
+    
+    .viber img {
+        height: 38px;
+    }
+    
+    .media {
+        width: 95%;
+        height: 50px;
+        margin-top: 50px;
+        margin-left: 89px;
+    }
+    
+    .media ul {
+        display: flex;
+    }
+    
+    .media ul li {
+        margin-left: 25px;
+        list-style: none;
+        transition: all 0.5s;
+    }
+    
+    ul .fb:hover {
+        transform: scale(1.5);
+    }
+    
+    ul .wa:hover {
+        transform: scale(1.5);
+    }
+    
+    .resume {
+        width: 95%;
+        height: 70px;
+    }
+    
+    .button-resume {
+        width: 150px;
+        margin-left: 30%;
+        margin-top: 45px;
+        padding: 15px;
+        background-color: green;
+        border: none;
+        border-radius: 7px;
+        color: aliceblue;
+        transition: all 0.5s;
+        font-weight: bolder;
+    }
+    
+    .button-resume:hover {
+        transform: scale(1.2);
+    }
+    
+    .inputbox {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 5px 10px;
+        background: #312d2d;
+        display: block;
+        height: 50px;
+        color: aliceblue;
+        border: #312d2d;
+        place-items: inherit;
+        width: 320px;
+    }
+    
+    textarea {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 5px 10px;
+        background: #312d2d;
+        display: block;
+        color: aliceblue;
+        border: #312d2d;
+        place-items: inherit;
+        resize: none;
+        width: 320px;
+    }
+    
+    .social {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        float: left;
+    }
+    
     .textbox {
-        position: absolute;
+        width: 50%;
+        float: right;
+        height: 50%;
     }
-
-    .submit {
-        width: 277px;
-        text-align: center;
+    
+    .button-submit {
+        width: 150px;
+        margin-top: 35px;
+        padding: 15px;
+        background-color: green;
+        border: none;
+        border-radius: 7px;
+        color: aliceblue;
+        transition: all 0.5s;
+        font-weight: bolder;
     }
-
- .h-ft {
-        margin: 0;
+    
+    .button-submit:hover {
+        transform: scale(1.2);
     }
-
+    
+    .div-ft {
+        height: 50px;
+        background-color: #24252A;
+        box-shadow: 0 -5px 15px black
+    }
+    
+    .h-ft {
+        height: 40px;
+        display: inline-block;
+        margin-left: 40%;
+    }
+    
     .h-ft h1 {
-        font-size: 12px;
+        font-size: large;
+        color: aliceblue;
+        margin-top: 15px;
     }
 }
