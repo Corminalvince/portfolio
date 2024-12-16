@@ -521,9 +521,18 @@ textarea {
     }
 
     .div-pf ul {
-        width: 0;
+        display: flex;
     }
-
+    
+    .div-pf {
+        position: fixed;
+        height: 70px; 
+        width: 100%; 
+        background: url(images/backgrounds.jpg);
+        background-size: cover;
+        margin-top: 40px;
+        box-shadow: 0 10px 20px black;
+    }
     .pf-ul {
         margin: 0;
         width: 10%;
