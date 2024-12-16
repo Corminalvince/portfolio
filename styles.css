@@ -504,13 +504,11 @@ textarea {
     margin-top: 15px;
 }
 
-@media (max-width: 930px)
-{
+@media (max-width: 930px) {
     html,
     body {
         width: 150vw;
     }
-
 
     .pf-h1 {
         margin: auto;
@@ -521,10 +519,6 @@ textarea {
         width: 100%;
     }
 
-    .div-pf ul {
-        display: flex;
-    }
-    
     .div-pf {
         position: fixed;
         height: 70px; 
@@ -533,12 +527,19 @@ textarea {
         background-size: cover;
         margin-top: 40px;
         box-shadow: 0 10px 20px black;
+        display: inline-block; /* Moved from duplicate declaration */
     }
+
+    .div-pf ul {
+        display: flex;
+    }
+
     .pf-ul {
         margin: 0;
         width: 10%;
         float: right;
     }
+
     .btn {
         margin-top: 13px;
         height: 50px;
@@ -548,44 +549,33 @@ textarea {
         border-radius: 10px;
         border: 1px solid aquamarine;
     }
-    
+
     .btn a {
         color: aliceblue;
         text-decoration: none;
         background-color: transparent;
         padding: 12px;
     }
-    
-    .btn a:hover,.btn:hover  {
+
+    .btn a:hover, .btn:hover {
         color: #24252A;
         background-color: aquamarine;
         transition: ease-in 0.2s;
     }
-    .div-pf {
-        display: inline-block;
-    }
-    .a-about:hover {
-        color: #00fbfb;
-        transform: translateY(1.5px);
-    }
-    .a-service:hover {
-        color: #00fbfb;
-        transform: translateY(1.5px);
-    }
-    
-    .a-project:hover {
-        color: #00fbfb;
-        transform: translate(1.5);
-    }
-    
-    .a-contact:hover {
-        color: #00fbfb;
-        transform: translate(1.5);
-    }
-    
+
+    .a-about:hover,
+    .a-service:hover,
+    .a-project:hover,
+    .a-contact:hover,
     .a-home:hover {
         color: #00fbfb;
-        transform: translate(1.5);
+        transform: translateY(1.5px);
+    }
+
+    .a-project:hover,
+    .a-contact:hover,
+    .a-home:hover {
+        transform: translate(1.5px); /* Added 'px' unit */
     }
 
     .section-home {
@@ -652,7 +642,7 @@ textarea {
     }
 
     .about-img img:hover {
-        transform: scale(0.1);
+        transform: scale(1.1); /* Changed scale to a more reasonable value */
     }
 
     .myproject img {
@@ -689,11 +679,11 @@ textarea {
         text-align: center;
     }
 
-    .h-ft {
+ .h-ft {
         margin: 0;
     }
 
     .h-ft h1 {
         font-size: 12px;
     }
-} 
+}
