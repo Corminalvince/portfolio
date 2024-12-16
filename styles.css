@@ -126,6 +126,7 @@ button:hover {
     font-size: 25px;
     font-weight: 550;
     color: aqua;
+    animation: blink 0.7s step-end infinite;
 }
 .cursor {
     display: inline-block;
@@ -507,7 +508,7 @@ textarea {
 {
     html,
     body {
-        width: 150vw
+        width: 150vw;
     }
 
 
@@ -538,7 +539,28 @@ textarea {
         width: 10%;
         float: right;
     }
-
+    .btn {
+        margin-top: 13px;
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        padding-top: 15px;
+        border-radius: 10px;
+        border: 1px solid aquamarine;
+    }
+    
+    .btn a {
+        color: aliceblue;
+        text-decoration: none;
+        background-color: transparent;
+        padding: 12px;
+    }
+    
+    .btn a:hover,.btn:hover  {
+        color: #24252A;
+        background-color: aquamarine;
+        transition: ease-in 0.2s;
+    }
     .div-pf {
         display: inline-block;
     }
