@@ -17,7 +17,15 @@
                 this.classList.add("active");
                 });
             });
-        });
+
+    // Hide .me and expand .content after 15s
+    setTimeout(function() {
+        var meSection = document.querySelector('.me');
+        var contentSection = document.querySelector('.content');
+        if (meSection) meSection.classList.add('me-hidden');
+        if (contentSection) contentSection.classList.add('full-width');
+    }, 15000);
+});
     </script>
 </head>
 <body>
@@ -44,13 +52,16 @@
         <div class="content">
             <h1>Hi, I'm Joe Lito Vince Corminal</h1>
             <h3>A Computer Science Student</h3>
-            <p>I can do Java,Android XML and Java Language, Php and MySQL. </p>
+            <p>I can do Java,Android XML and Java Language, Php and MySQL,and i can do Web Development. </p>
             <div class="btn">
                 <a href="#contact">Let's Talk</a>
             </div>
         </div>
         <div class="me">
             <img src="images/Ako.png" alt="Your Image">
+            <svg class="me-progress-ring" width="350" height="350">
+                <circle class="me-progress-bar" cx="175" cy="175" r="165" />
+            </svg>
         </div>
         
     </section>
