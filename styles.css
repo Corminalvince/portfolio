@@ -57,6 +57,14 @@ body {
     letter-spacing: 2px;
 }
 
+.pf-h1 h1 .h1-s {
+    color: white;
+}
+.pf-h1 h1 .span-h1 {
+    color: #00c853;
+    /* A vibrant green, adjust as needed */
+}
+
 .pf-ul {
     flex: 1;
     display: flex;
@@ -521,4 +529,180 @@ section, .section-home, .section-about, .section-project, .section-services, #co
     .myproject img {
         max-width: 100%;
     }
+    .hamburger {
+      display: flex;
+    }
+    .pf-ul {
+      display: none;
+    }
+    .sidebar-nav {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100vh;
+      background: var(--secondary-bg);
+      box-shadow: 2px 0 16px rgba(0,0,0,0.18);
+      z-index: 1200;
+      padding-top: 80px;
+      transform: translateX(-100%);
+      transition: transform 0.3s;
+    }
+    body.sidebar-open .sidebar-nav {
+      transform: translateX(0);
+    }
+    body.sidebar-open {
+      overflow: hidden;
+    }
+    .sidebar-nav .ul-nav {
+      flex-direction: column;
+      gap: 24px;
+      align-items: flex-start;
+      padding-left: 32px;
+    }
+    .sidebar-nav .ul-nav a {
+      color: var(--text-main);
+      font-size: 1.1rem;
+      padding: 8px 0;
+      width: 100%;
+      display: block;
+    }
+    .sidebar-nav .ul-nav a.active, .sidebar-nav .ul-nav a:hover {
+      color: #00c853;
+      background: none;
+    }
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.35);
+      z-index: 1199;
+      transition: opacity 0.3s;
+      opacity: 0;
+      pointer-events: none;
+    }
+    body.sidebar-open .sidebar-overlay {
+      display: block;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .sidebar-nav .ul-nav {
+      gap: 36px;
+      padding-left: 40px;
+    }
+    .sidebar-nav .ul-nav a {
+      min-height: 48px;
+      line-height: 48px;
+      font-size: 1.2rem;
+      padding: 8px 0;
+    }
+    .sidebar-menu-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 24px;
+      padding-top: 8px;
+    }
+    .sidebar-menu-icon svg {
+      width: 36px;
+      height: 36px;
+      display: block;
+    }
+}
+
+@media (max-width: 500px) {
+  .div-pf {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 2px;
+  }
+  .pf-h1 {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .pf-h1 a {
+    font-size: 1.3rem;
+  }
+  .ul-nav {
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ul-nav a {
+    font-size: 0.98rem;
+    padding: 6px 10px;
+  }
+  .section-home, .section-about, .section-project, .section-services, #contact {
+    padding: 40px 0 20px 0;
+    min-height: unset;
+  }
+  .content {
+    max-width: 100%;
+    margin-right: 0;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .content h1 {
+    font-size: 1.2rem;
+  }
+  .content h3 {
+    font-size: 1rem;
+  }
+  .me, .me img[src$="Ako.png"], .me img {
+    width: 120px !important;
+    height: 120px !important;
+    min-width: 80px;
+    min-height: 80px;
+  }
+  .me-progress-ring {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .about-img {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .about-img img {
+    height: 80px;
+  }
+  .container-about, .container-contact {
+    padding: 10px 2px;
+    max-width: 100%;
+  }
+  .myproject img {
+    max-width: 100%;
+    height: 80px;
+  }
+  .button-project button, .button-resume, .button-submit {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+  .inputbox, textarea {
+    font-size: 0.95rem;
+    padding: 8px 8px;
+  }
+  .media ul {
+    gap: 8px;
+  }
+  .h-ft h1 {
+    font-size: 0.8rem;
+  }
+  .hamburger {
+    width: 48px;
+    height: 48px;
+  }
+  .hamburger span {
+    
+    width: 36px;
+    height: 5px;
+    margin: 6px 0;
+  }
 }
